@@ -21,10 +21,13 @@ echo "Meu anime favorito é <br>"  . $animes[1];
 //escrevar tds
 echo print_r($animes);
 
-//alterar
+//alterar 
 $animes[2] = "Tonikaku Kawaii dublado";
 echo "<br>";
-print_r($animes);
+print_r($animes); 
+// ou array_push ($animes, "oi"); vai inserir no final
+
+
 
 //remover 
 unset($animes[2]);
