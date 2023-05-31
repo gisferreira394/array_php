@@ -11,14 +11,38 @@
 <?php
 //criar array
 $animes = array("Fruits basket" , "Tonikaku Kawaii", "Horimiya");
+
 //adicionar um elemento
 $animes[] = "naruto";
+
 //escrever apenas o q eu indicar
 echo "Meu anime favorito é <br>"  . $animes[1];
+
 //escrevar tds
 echo print_r($animes);
+
 //alterar
-$animes[1] = "Tonikaku Kawaii dublado";
+$animes[2] = "Tonikaku Kawaii dublado";
+echo "<br>";
+print_r($animes);
+
+//remover 
+unset($animes[2]);
+echo "<br>";
+print_r($animes);
+
+
+//ordenar 
+sort($animes);
+print_r($animes);
+
+//exibir tds os itens do array
+echo "<br>"; 
+foreach($animes as $animes){
+    echo $animes . "<br>";
+}
+
+
 
 ?>
 </body>
